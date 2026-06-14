@@ -1,4 +1,9 @@
-public class Volunteer {
+import java.io.Serializable;
+
+public class Volunteer implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     private int volunteerId;
     private String name;
     private int age;
@@ -113,7 +118,7 @@ public class Volunteer {
         );
     }
 
-    // Convert object to file format
+    // Convert object to CSV format (optional use)
     public String toFileString() {
         return volunteerId + "," +
                 name + "," +

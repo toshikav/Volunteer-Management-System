@@ -16,12 +16,6 @@ public class Main {
         VolunteerManager manager = new VolunteerManager();
         EventManager eventManager = new EventManager();
 
-        // Load saved volunteers
-        ArrayList<Volunteer> loadedVolunteers = FileManager.loadVolunteers();
-
-        for (Volunteer volunteer : loadedVolunteers) {
-            manager.addVolunteer(volunteer);
-        }
 
         int choice;
 
@@ -50,9 +44,6 @@ public class Main {
 
                 case 1:
 
-                    System.out.print("Volunteer ID: ");
-                    int id = Integer.parseInt(scanner.nextLine());
-
                     System.out.print("Name: ");
                     String name = scanner.nextLine();
 
@@ -69,7 +60,7 @@ public class Main {
                     String skill = scanner.nextLine();
 
                     Volunteer volunteer = new Volunteer(
-                            id,
+                            0,
                             name,
                             age,
                             phone,
@@ -155,10 +146,9 @@ public class Main {
 
                 case 8:
 
-                    FileManager.saveVolunteers(
-                            manager.getVolunteers());
+                FileManager.saveVolunteers(manager.getVolunteers());
 
-                    break;
+                break;
 
                 case 9:
 
@@ -167,13 +157,11 @@ public class Main {
 
                 case 10:
 
-                    FileManager.saveVolunteers(
-                            manager.getVolunteers());
+                FileManager.saveVolunteers(manager.getVolunteers());
 
-                    System.out.println(
-                            "\nThank You for Using the System!");
+                System.out.println("\nThank You for Using the System!");
 
-                    break;
+                break;
 
                 default:
 
