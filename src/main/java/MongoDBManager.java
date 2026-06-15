@@ -12,7 +12,7 @@ public class MongoDBManager {
 
     
     private static final String URI =
-        "mongodb+srv://nayepankhuser:nayepankh12345@cluster0.xnaqco4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+        "mongodb+srv://nayepankhuser:nayepankh333@cluster0.xnaqco4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
     private static final String DB_NAME = "NayePankhDB";
 
