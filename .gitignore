@@ -31,3 +31,5 @@ Thumbs.db
 
 secrets.txt
 config.properties
+
+*.dat
