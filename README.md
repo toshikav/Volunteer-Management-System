@@ -1,136 +1,90 @@
-# NayePankh Foundation Volunteer Management System
+NayePankh Volunteer System
 
-## Overview
+A Java-based Volunteer Management System integrated with MongoDB Atlas.  
+This project manages volunteer data using CRUD operations with a DAO-based backend architecture.
 
-The NayePankh Foundation Volunteer Management System is a Java-based console application designed to help NGOs efficiently manage volunteers, attendance, task assignments, events, and reports.
+------------------------------------------------------------
 
-The project was developed using Object-Oriented Programming (OOP) principles and demonstrates the use of Java Collections, File Handling, Exception Handling, and Data Persistence.
+Features
 
----
+- Admin Login System
+- MongoDB Atlas Integration
+- Add Volunteers
+- View Volunteers
+- DAO Layer Architecture
+- Environment Variable Based Configuration
+- Modular Java Code Structure
 
-## Features
+------------------------------------------------------------
 
-### Volunteer Management
+Tech Stack
 
-* Add Volunteers
-* View All Volunteers
-* Search Volunteer by ID
-* Assign Tasks
-* Mark Attendance
-* Count Total Volunteers
-* Count Present Volunteers
-* Count Absent Volunteers
+- Java
+- MongoDB Atlas
+- Maven
+- MongoDB Java Driver
 
-### Reporting
+------------------------------------------------------------
 
-* Generate NGO Reports
-* Export Reports to CSV
+Project Structure
 
-### Event Management
+src/main/java/
 
-* Add Events
-* View Events
-* Search Events
+- Main.java
+- MongoDBManager.java
+- VolunteerDAO.java
+- Volunteer.java
+- VolunteerManager.java
+- FileManager.java
 
-### Security
+------------------------------------------------------------
 
-* Admin Login Authentication
+Setup Instructions
 
-### Data Persistence
+1. Clone the repository
 
-* Save Volunteer Data to File
-* Automatically Load Data on Startup
+git clone https://github.com/your-username/NayePankhVolunteerSystem.git
 
----
+2. Set environment variable
 
-## Technologies Used
+MONGO_URI=your_mongodb_connection_string
 
-* Java
-* Object-Oriented Programming (OOP)
-* ArrayList
-* File Handling
-* Exception Handling
-* Scanner Class
+3. Run the project
 
----
+mvn clean compile exec:java
 
-## Project Structure
+------------------------------------------------------------
 
-NayePankhVolunteerSystem
+Security
 
-├── src
+- No hardcoded credentials
+- MongoDB URI stored in environment variables
+- .gitignore configured to prevent sensitive data exposure
 
-│   ├── Volunteer.java
+------------------------------------------------------------
 
-│   ├── VolunteerManager.java
+Learning Outcomes
 
-│   ├── FileManager.java
+- Java backend development
+- MongoDB integration
+- DAO design pattern
+- Environment variable handling
+- Maven project structure
+- Debugging real-world issues
 
-│   ├── ReportGenerator.java
+------------------------------------------------------------
 
-│   ├── AdminLogin.java
+Future Improvements
 
-│   ├── Event.java
+- JavaFX GUI
+- Role-based authentication
+- REST API using Spring Boot
+- Web dashboard
+- Attendance tracking system
 
-│   ├── EventManager.java
+------------------------------------------------------------
 
-│   └── Main.java
+Author
 
-├── data
-
-│   ├── volunteers.txt
-
-│   └── report.csv
-
-└── README.md
-
----
-
-## Login Credentials
-
-Username: admin
-
-Password: naye123
-
----
-
-## How to Run
-
-1. Open terminal in the src folder.
-
-2. Compile all Java files:
-
-javac *.java
-
-3. Run the application:
-
-java Main
-
----
-
-## Sample Features Demonstrated
-
-* Volunteer Registration
-* Attendance Tracking
-* Task Assignment
-* Event Management
-* CSV Report Generation
-* File-Based Data Storage
-
----
-
-## Future Enhancements
-
-* Search Volunteer by Name
-* Volunteer Skill Filter
-* Automatic Volunteer ID Generation
-* Java Swing GUI
-* Database Integration (MySQL)
-* Email Notifications
-
----
-
-## Author
-
-Developed for internship/project submission purposes as a Java-based NGO Management System.
-    
+Toshika Verma
+B.Tech Student | Java Developer | Backend Enthusiast
