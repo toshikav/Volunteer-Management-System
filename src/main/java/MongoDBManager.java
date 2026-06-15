@@ -12,7 +12,6 @@ public class MongoDBManager {
 
     
     private static final String URI =
-       private static final String CONNECTION_STRING =
         "YOUR_MONGODB_CONNECTION_STRING";
 
     private static final String DB_NAME = "NayePankhDB";
